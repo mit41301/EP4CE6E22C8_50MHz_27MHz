@@ -1,0 +1,154 @@
+Flow report for spi_flash_read
+Tue Sep 03 18:05:41 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue Sep 03 18:05:41 2024       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; spi_flash_read                              ;
+; Top-level Entity Name              ; spi_flash_read                              ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE6E22C8                                 ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 220 / 6,272 ( 4 % )                         ;
+;     Total combinational functions  ; 203 / 6,272 ( 3 % )                         ;
+;     Dedicated logic registers      ; 143 / 6,272 ( 2 % )                         ;
+; Total registers                    ; 143                                         ;
+; Total pins                         ; 8 / 92 ( 9 % )                              ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,048 / 276,480 ( < 1 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/03/2024 18:05:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; spi_flash_read      ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                  ;
++--------------------------------------+------------------------------------------+---------------+-------------+-------------------+
+; Assignment Name                      ; Value                                    ; Default Value ; Entity Name ; Section Id        ;
++--------------------------------------+------------------------------------------+---------------+-------------+-------------------+
+; COMPILER_SIGNATURE_ID                ; 962560033225.172535791909348             ; --            ; --          ; --                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                       ; --            ; --          ; tb_spi_flash_read ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_spi_flash_read                        ; --            ; --          ; eda_simulation    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                              ; --            ; --          ; eda_simulation    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                       ; <None>        ; --          ; --                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                          ; --            ; --          ; eda_simulation    ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/tb_spi_flash_read.v               ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/acdc_check.v        ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/initmemory.txt      ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/internal_logic.v    ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/M25p16.v            ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/memory_access.v     ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/parameter.v         ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/M25P16_VG_V12/initM25P16_test.txt ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_spi_flash_read                        ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TEST_BENCH_NAME                  ; tb_spi_flash_read                        ; --            ; --          ; eda_simulation    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                     ; --            ; --          ; tb_spi_flash_read ;
+; EDA_TIME_SCALE                       ; 1 ps                                     ; --            ; --          ; eda_simulation    ;
+; ENABLE_SIGNALTAP                     ; Off                                      ; --            ; --          ; --                ;
+; IP_TOOL_NAME                         ; FIFO                                     ; --            ; --          ; --                ;
+; IP_TOOL_VERSION                      ; 13.0                                     ; --            ; --          ; --                ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                       ; --            ; --          ; --                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                        ; --            ; --          ; --                ;
+; MISC_FILE                            ; ip_core/fifo_data_inst.v                 ; --            ; --          ; --                ;
+; MISC_FILE                            ; ip_core/fifo_data_bb.v                   ; --            ; --          ; --                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                        ; --            ; --          ; --                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                        ; --            ; --          ; --                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                               ; --            ; --          ; --                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                               ; --            ; --          ; --                ;
+; PARTITION_COLOR                      ; 16764057                                 ; --            ; --          ; Top               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                    ; --            ; --          ; Top               ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                   ; --            ; --          ; Top               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                      ; --            ; --          ; --                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW    ; --            ; --          ; --                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                             ; --            ; --          ; --                ;
+; USE_SIGNALTAP_FILE                   ; output_files/stp1.stp                    ; --            ; --          ; --                ;
++--------------------------------------+------------------------------------------+---------------+-------------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4702 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 2.0                     ; 6157 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4615 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4850 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4569 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:22                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; PC-20240625RLTR  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; PC-20240625RLTR  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; PC-20240625RLTR  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; PC-20240625RLTR  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; PC-20240625RLTR  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off spi_flash_read -c spi_flash_read
+quartus_fit --read_settings_files=off --write_settings_files=off spi_flash_read -c spi_flash_read
+quartus_asm --read_settings_files=off --write_settings_files=off spi_flash_read -c spi_flash_read
+quartus_sta spi_flash_read -c spi_flash_read
+quartus_eda --read_settings_files=off --write_settings_files=off spi_flash_read -c spi_flash_read
+
+
+
